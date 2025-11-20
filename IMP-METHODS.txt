@@ -1,0 +1,14 @@
+STRING METHODS
+
+* includes() - method checks if a string contains a specific substring and returns true or false.
+-- The includes() method is case-sensitive, meaning it distinguishes between uppercase and lowercase letters.
+
+* slice() - The slice() method extracts a section of a string. It takes two arguments: the start index (included) and the end index (not included).
+-- slice() to extract from the beginning of a string.(0,5)
+-- The slice() method can use negative indices to count from the end of the string. 
+   -1 refers to the last character.
+
+
+
+
+* querySelectorAll() - returns a NodeList, which is an array-like structure, and one of the methods that a NodeList has is forEach(), and it works the same way as the forEach that exists on arrays.
