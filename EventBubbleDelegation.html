@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling and Delegation</title>
+  </head>
+  <body>
+    <h1>Event Bubbling and Delegation</h1>
+    <!-- <p>
+      <span>Click me~!</span>
+    </p> -->
+
+    <p>
+      <span>Click me~!</span>
+      <span>Click me~!</span>
+      <span>Click me~!</span>
+      <span>Click me~!</span>
+    </p>
+
+    <script>
+      // const p = document.querySelector("p");
+      // const span = document.querySelector("span");
+      // p.addEventListener("click", (event) => {
+      //   console.log("P listener: ");
+      //   console.log(event.target);
+      // });
+      // span.addEventListener("click", (event) => {
+      //   console.log("Span listener: ");
+      //   console.log(event.target);
+      //   event.stopPropagation();
+      // });
+
+      // DELEGATION
+      const p = document.querySelector("p");
+      p.addEventListener("click", (event) => {
+        event.target.style.color = "red";
+      });
+    </script>
+  </body>
+</html>
