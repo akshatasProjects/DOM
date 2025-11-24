@@ -1,0 +1,11 @@
+.lightbox{
+  position: fixed;       /* Opens on top of everything */
+  top: 0;
+  left: 0;              /* Start at top-left corner */
+  width: 100%;          /* Cover entire viewport */
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark background */
+  display: none;             /* Hidden initially */
+  justify-content: center;  /* Show content centered when visible */
+  align-items: center;
+}
