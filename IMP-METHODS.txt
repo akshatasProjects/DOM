@@ -12,3 +12,26 @@ STRING METHODS
 
 
 * querySelectorAll() - returns a NodeList, which is an array-like structure, and one of the methods that a NodeList has is forEach(), and it works the same way as the forEach that exists on arrays.
+
+
+## A truthy value is a value that evaluates to true in a boolean context.
+* Non-empty strings
+* Non-zero numbers
+* The boolean true
+
+- You can use the Boolean() function to check the truthiness of a value.
+
+## Falsy values are values that evaluate to false in a boolean context.
+* "" (empty string)
+* 0
+* false
+* null
+* undefined
+* NaN
+
+## CONDITIONAL STATEMENT
+A conditional statement is used to run code depending on a condition. It is 
+composed of the if keyword, followed by a condition enclosed by parentheses, and a body enclosed by curly braces.
+
+## COMPARISON OPERATOR
+Comparison operators allow you to compare values and write more complex conditional statements.
