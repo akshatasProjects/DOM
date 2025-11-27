@@ -43,18 +43,16 @@ function displayPlayers(playersArray) {
 displayPlayers(footballTeam.players);
 
 // Filtering by dropdown
-document
-  .getElementById("position-filter")
-  .addEventListener("change", function () {
-    const selectedPosition = this.value; // Gets the selected value from dropdown
+document.getElementById("players").addEventListener("change", function () {
+  const selectedPosition = this.value; // Gets the selected value from dropdown
 
-    if (selectedPosition === "all") {
-      displayPlayers(footballTeam.players); // Shows ALL players
-    } else {
-      // Shows ONLY players with the selected position
-      const filtered = footballTeam.players.filter(
-        (p) => p.position === selectedPosition
-      );
-      displayPlayers(filtered);
-    }
-  });
+  if (selectedPosition === "all") {
+    displayPlayers(footballTeam.players); // Shows ALL players
+  } else {
+    // Shows ONLY players with the selected position
+    const filtered = footballTeam.players.filter(
+      (p) => p.position === selectedPosition
+    );
+    displayPlayers(filtered);
+  }
+});
